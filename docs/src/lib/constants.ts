@@ -39,7 +39,7 @@ export const MISSION = {
   chemistry: "LiFePO₄ (2S1P)",
   propulsion: "Passive magnetic attitude control (PMAC)",
   status: "Pre-flight design",
-  deadlineLabel: "November 19, 2026",
+  deadlineLabel: "2028 CSLI call",
   envelope: "100.0 × 100.0 × 113.5 mm",
   massLimit: "1.33 kg (CSLI)",
   chassis: "Aluminum 6061-T6",
@@ -47,9 +47,10 @@ export const MISSION = {
 } as const;
 
 export const TIMELINE = {
-  start: new Date("2026-08-19T00:00:00"),
-  deadline: new Date("2026-11-19T23:59:59"),
-  totalDays: 92,
+  start: new Date("2026-10-14T00:00:00"),
+  // Placeholder for future CSLI window; no active countdown used on site.
+  deadline: new Date("2028-12-31T23:59:59"),
+  totalDays: 0,
 } as const;
 
 export const GITHUB_TREE = `${GITHUB_BASE}/tree/main`;
@@ -57,6 +58,7 @@ export const GITHUB_TREE = `${GITHUB_BASE}/tree/main`;
 export const NAV_LINKS = [
   { href: "/", label: "Overview" },
   { href: "/architecture", label: "Architecture" },
+  { href: "/research", label: "Research" },
   { href: "/repository", label: "Repository" },
   { href: "/ground-station", label: "Ground Station" },
   { href: "/collaborate", label: "Collaborate" },
