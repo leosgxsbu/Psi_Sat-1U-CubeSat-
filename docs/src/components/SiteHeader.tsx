@@ -18,8 +18,8 @@ export function SiteHeader() {
   return (
     <header className="relative z-20 bg-header text-white">
       <div className="border-b border-accent bg-accent px-4 py-2 text-center text-sm text-header">
-        NASA CSLI submission deadline:{" "}
-        <strong>November 19, 2026</strong>
+        NASA anticipates the next CSLI call in <strong>2028</strong>. PsiSAT is targeting
+        that solicitation.
       </div>
 
       <div className="mx-auto flex max-w-5xl items-start justify-between gap-4 px-4 py-5 md:px-6">

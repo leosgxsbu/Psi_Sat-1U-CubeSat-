@@ -35,9 +35,11 @@ export default function ArchitecturePage() {
             power and signal distribution.
           </p>
           <p>
-            <strong>Build status (Aug 11, 2026 proposal):</strong> mechanical integration
-            of Stages 3–6 is in progress; Stages 1–2 payload front-end integration is
-            planned after power and deployment loops are verified.
+            <strong>Current build status:</strong> the team is designing the board stack.
+            The <strong>STM32 flight computer board (Stage 3)</strong> schematic is
+            nearly complete. Next, we plan a low‑cost bench test of the{" "}
+            <strong>CsI(Tl) crystal + SiPM</strong> detector and a development board for
+            flight software, before any flight hardware.
           </p>
 
           <div className="not-prose mt-8 space-y-4">

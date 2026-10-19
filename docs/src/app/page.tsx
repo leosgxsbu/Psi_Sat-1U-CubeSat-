@@ -88,13 +88,20 @@ export default function HomePage() {
             timestamps on EXTI10 (short events ~1–5 s; longer events up to ~40–60 s in
             proposal examples).
           </p>
+          <p>
+            <strong>Current build status:</strong> we are designing the board stack.
+            The <strong>STM32 flight computer board (Stage 3)</strong> schematic is
+            nearly complete. Next, we&apos;ll do a low‑cost bench test of the{" "}
+            <strong>CsI(Tl) crystal + SiPM</strong> detector and create a development
+            board for flight software, before any flight hardware.
+          </p>
 
           <h2 id="status">CSLI timeline</h2>
           <p>
-            NASA CubeSat Launch Initiative (CSLI) technical proposal target:{" "}
-            <strong>{MISSION.deadlineLabel}</strong>. If selected (around March), the
-            team would have roughly 1–2 years to complete flight hardware. IARU frequency
-            coordination and FCC Part 5 licensing run in parallel with the CSLI process.
+            NASA&apos;s CubeSat Launch Initiative page (updated Oct 14, 2026) indicates
+            the next CSLI solicitation is anticipated in <strong>2028</strong>. PsiSAT is
+            now targeting the 2028 call. IARU coordination and FCC planning will proceed
+            alongside design work.
           </p>
           <div className="not-prose my-6 max-w-xl">
             <DeadlineCard />
