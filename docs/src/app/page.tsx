@@ -4,6 +4,7 @@ import { PageHero } from "@/components/PageHero";
 import { DETECTION_SPECS, MISSION } from "@/lib/constants";
 import type { Metadata } from "next";
 import Link from "next/link";
+import { Sponsors } from "@/components/Sponsors";
 
 export const metadata: Metadata = {
   title: "Mission Overview",
@@ -144,6 +145,7 @@ export default function HomePage() {
             </Link>
           ))}
         </div>
+        <Sponsors />
       </div>
     </>
   );
