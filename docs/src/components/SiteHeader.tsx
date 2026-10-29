@@ -18,11 +18,6 @@ export function SiteHeader() {
 
   return (
     <header className="sticky top-0 z-20 bg-header/85 text-white backdrop-blur supports-[backdrop-filter]:bg-header/75">
-      <div className="border-b border-accent/40 bg-accent/95 px-4 py-2 text-center text-sm text-header">
-        NASA anticipates the next CSLI call in <strong>2028</strong>. PsiSAT is targeting
-        that solicitation.
-      </div>
-
       <motion.div
         initial={{ opacity: 0, y: -8 }}
         animate={{ opacity: 1, y: 0 }}
