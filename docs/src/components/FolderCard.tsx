@@ -6,7 +6,7 @@ export function FolderCard({ folder }: { folder: RepoFolder }) {
   return (
     <Link
       href={`/repository/${folder.slug}`}
-      className="group block border border-line bg-white p-5 no-underline transition-colors hover:border-accent"
+      className="group block transform border border-line bg-white p-5 no-underline shadow-sm transition duration-200 hover:-translate-y-0.5 hover:border-accent hover:shadow-md"
     >
       <div className="flex items-start gap-3">
         <Folder className="mt-0.5 h-6 w-6 shrink-0 text-accent" strokeWidth={1.5} />

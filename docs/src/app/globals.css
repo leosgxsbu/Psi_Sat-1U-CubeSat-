@@ -4,12 +4,12 @@
   --header: #0b0b0b;
   --accent: #ff9900;
   --accent-dark: #c77700;
-  --ink: #000000;
-  --muted: #000000;
+  --ink: #0b0b0f;
+  --muted: #475569;
   --line: #e4e4e4;
   --paper: #ffffff;
   --paper-soft: #f7f7f5;
-  --link: #3d3000;
+  --link: #0b3d91;
   --font-display: var(--font-space-grotesk);
   --font-body: var(--font-source-sans);
 }
@@ -42,24 +42,12 @@ body {
   background: transparent;
   color: var(--ink);
   font-family: var(--font-body), system-ui, sans-serif;
-  line-height: 1.65;
-  font-weight: 600;
+  line-height: 1.7;
+  font-weight: 500;
 }
 
-main {
-  font-weight: 700;
-  text-shadow:
-    0 0 3px rgba(255, 255, 255, 1),
-    0 0 6px rgba(255, 255, 255, 0.95),
-    0 1px 0 rgba(255, 255, 255, 0.9);
-}
-
-footer {
-  font-weight: 600;
-  text-shadow:
-    0 0 3px rgba(255, 255, 255, 1),
-    0 1px 0 rgba(255, 255, 255, 0.9);
-}
+main { font-weight: 600; }
+footer { font-weight: 600; }
 
 a {
   color: var(--link);
@@ -80,7 +68,7 @@ a:hover {
   font-size: 1.75rem;
   font-weight: 700;
   margin: 2.5rem 0 0.75rem;
-  color: #000000;
+  color: var(--ink);
 }
 
 .prose-page h2::after {
@@ -94,12 +82,12 @@ a:hover {
 
 .prose-page p {
   margin: 0.85rem 0;
-  color: #000000;
-  font-weight: 600;
+  color: var(--ink);
+  font-weight: 500;
 }
 
 .prose-page ul {
   margin: 0.75rem 0 0.75rem 1.25rem;
-  color: #000000;
-  font-weight: 600;
+  color: var(--ink);
+  font-weight: 500;
 }
