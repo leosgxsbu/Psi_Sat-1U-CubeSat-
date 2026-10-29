@@ -1,11 +1,14 @@
 import { ContentsBox } from "@/components/ContentsBox";
 import { DeadlineCard } from "@/components/DeadlineCard";
-import { PageHero } from "@/components/PageHero";
 import { DETECTION_SPECS, MISSION } from "@/lib/constants";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { Sponsors } from "@/components/Sponsors";
 import { Reveal } from "@/components/Reveal";
+import { Hero } from "@/components/Hero";
+import { SponsorMarquee } from "@/components/SponsorMarquee";
+import { HomeStats } from "@/components/HomeStats";
+import { RiseVisual } from "@/components/RiseVisual";
 
 export const metadata: Metadata = {
   title: "Mission Overview",
@@ -14,13 +17,26 @@ export const metadata: Metadata = {
 export default function HomePage() {
   return (
     <>
-      <PageHero
-        title={`${MISSION.codename} Mission Overview`}
-        subtitle={MISSION.fullName}
-        crumbs={[{ label: "Home" }, { label: "Mission Overview" }]}
+      <Hero
+        imageSrc="/backgrounds/earth-horizon.png"
+        imageAlt="Earth horizon above low-Earth orbit"
+        title={`${MISSION.codename} — ${MISSION.fullName}`}
+        subtitle={MISSION.org}
+      />
+      <HomeStats />
+      <SponsorMarquee
+        logos={[
+          { src: "/sponsors/ansys.svg", alt: "Ansys", href: "https://www.ansys.com/" },
+        ]}
+        speed={35}
+      />
+      <RiseVisual
+        imageSrc="/placeholders/cubesat-silhouette.svg"
+        imageAlt="Placeholder silhouette frame for PsiSAT CubeSat render"
+        caption="Placeholder — swap with CubeSat render when available"
       />
 
-      <div className="relative z-10 mx-auto max-w-6xl px-4 py-10 md:px-6 md:py-12">
+      <div className="relative z-10 mx-auto max-w-6xl px-4 py-12 md:px-6 md:py-16">
         <Reveal>
           <ContentsBox
             items={[
@@ -35,7 +51,7 @@ export default function HomePage() {
 
         <article className="prose-page">
           <Reveal>
-            <h2 id="overview">Overview</h2>
+            <h2 id="overview" className="text-center">Overview</h2>
             <p>
               <strong>{MISSION.codename}</strong> (Low-Earth Orbit Gamma-Ray Mapping) is a
               Stony Brook University project to design a 1U CubeSat observatory for soft
@@ -51,7 +67,7 @@ export default function HomePage() {
           </Reveal>
 
           <Reveal y={16}>
-            <h2 id="vehicle">Vehicle envelope</h2>
+            <h2 id="vehicle" className="text-center">Vehicle envelope</h2>
             <div className="my-8 not-prose overflow-x-auto">
               <table className="w-full border-collapse border border-line bg-white text-left text-sm">
                 <tbody>
@@ -76,7 +92,7 @@ export default function HomePage() {
           </Reveal>
 
           <Reveal y={16}>
-            <h2 id="detection">Detection performance (proposal)</h2>
+            <h2 id="detection" className="text-center">Detection performance (proposal)</h2>
             <div className="not-prose overflow-x-auto">
               <table className="w-full border-collapse border border-line bg-white text-left text-sm">
                 <tbody>
@@ -107,7 +123,7 @@ export default function HomePage() {
           </Reveal>
 
           <Reveal y={16}>
-            <h2 id="status">CSLI timeline</h2>
+            <h2 id="status" className="text-center">CSLI timeline</h2>
             <p>
               NASA&apos;s CubeSat Launch Initiative page (updated Oct 14, 2026) indicates
               the next CSLI solicitation is anticipated in <strong>2028</strong>. PsiSAT is
