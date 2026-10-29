@@ -74,6 +74,13 @@ export function SiteHeader() {
               </Link>
             );
           })}
+          <a
+            href="mailto:umermaalik24@gmail.com?subject=Join%20PsiSAT%20team"
+            onClick={() => setOpen(false)}
+            className="mt-2 block rounded-md border border-accent bg-transparent px-3 py-2 text-sm font-semibold text-white transition hover:bg-accent/20 md:ml-auto md:mt-0 md:inline-block"
+          >
+            Join the team
+          </a>
         </div>
       </nav>
     </header>
