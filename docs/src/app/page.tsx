@@ -7,7 +7,6 @@ import { Sponsors } from "@/components/Sponsors";
 import { Reveal } from "@/components/Reveal";
 import { Hero } from "@/components/Hero";
 import { SponsorMarquee } from "@/components/SponsorMarquee";
-import { HomeStats } from "@/components/HomeStats";
 import { RiseVisual } from "@/components/RiseVisual";
 
 export const metadata: Metadata = {
@@ -23,13 +22,20 @@ export default function HomePage() {
         title={`${MISSION.codename} — ${MISSION.fullName}`}
         subtitle={MISSION.org}
       />
-      <HomeStats />
       <SponsorMarquee
         logos={[
           { src: "/sponsors/ansys.svg", alt: "Ansys", href: "https://www.ansys.com/" },
         ]}
         speed={35}
       />
+      <div className="bg-black py-6 text-white">
+        <div className="mx-auto max-w-6xl px-4 md:px-6">
+          <p className="rounded-md border border-white/10 bg-white/5 px-4 py-3 text-sm text-white/85">
+            We&apos;re actively building PsiSAT. Visuals and docs are a work‑in‑progress —
+            hardware renders and more details will land soon.
+          </p>
+        </div>
+      </div>
       <RiseVisual
         imageSrc="/placeholders/cubesat-silhouette.svg"
         imageAlt="Placeholder silhouette frame for PsiSAT CubeSat render"

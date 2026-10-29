@@ -31,18 +31,11 @@ export function Sponsors() {
       </div>
       <div className="mt-6">
         <a
-          href="/collaborate"
+          href="mailto:umermaalik24@gmail.com?subject=PsiSAT%20sponsorship"
           className="inline-block rounded-md border border-accent bg-accent px-4 py-2.5 text-sm font-semibold text-header transition hover:bg-accent/90"
         >
           Become a sponsor
         </a>
-        <p className="mt-2 text-xs text-muted">
-          Interested partners can also email{" "}
-          <a className="text-link" href="mailto:muhammad.maalik@stonybrook.edu">
-            muhammad.maalik@stonybrook.edu
-          </a>
-          .
-        </p>
       </div>
     </section>
   );
