@@ -1,11 +1,11 @@
 import { ContentsBox } from "@/components/ContentsBox";
 import { DeadlineCard } from "@/components/DeadlineCard";
-import { PageHero } from "@/components/PageHero";
 import { DETECTION_SPECS, MISSION } from "@/lib/constants";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { Sponsors } from "@/components/Sponsors";
 import { Reveal } from "@/components/Reveal";
+import { HeroCarousel } from "@/components/HeroCarousel";
 
 export const metadata: Metadata = {
   title: "Mission Overview",
@@ -14,13 +14,17 @@ export const metadata: Metadata = {
 export default function HomePage() {
   return (
     <>
-      <PageHero
-        title={`${MISSION.codename} Mission Overview`}
-        subtitle={MISSION.fullName}
-        crumbs={[{ label: "Home" }, { label: "Mission Overview" }]}
+      <HeroCarousel
+        title={`${MISSION.codename} — ${MISSION.fullName}`}
+        subtitle={`${MISSION.org}`}
+        slides={[
+          { src: "/backgrounds/earth-horizon.png", alt: "Earth horizon above low-Earth orbit" },
+          { src: "/backgrounds/solar-wind.png", alt: "Solar wind visualization in space" },
+          { src: "/backgrounds/stars.png", alt: "Star field representing deep space" },
+        ]}
       />
 
-      <div className="relative z-10 mx-auto max-w-6xl px-4 py-10 md:px-6 md:py-12">
+      <div className="relative z-10 mx-auto max-w-6xl px-4 py-12 md:px-6 md:py-16">
         <Reveal>
           <ContentsBox
             items={[

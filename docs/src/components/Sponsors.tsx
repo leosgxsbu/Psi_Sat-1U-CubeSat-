@@ -7,7 +7,7 @@ export function Sponsors() {
     <section aria-labelledby="sponsors-title" className="mt-14 border-t border-line pt-8">
       <article className="prose-page">
         <h2 id="sponsors-title">Sponsors</h2>
-        <p>Thank you to our sponsors for supporting the PsiSAT student CubeSat project.</p>
+        <p>Thank you to our sponsor for supporting the PsiSAT student CubeSat project.</p>
       </article>
       <div className="mt-6">
         <ul className="flex flex-wrap items-center gap-6 sm:gap-8">
@@ -28,6 +28,21 @@ export function Sponsors() {
             </a>
           </li>
         </ul>
+      </div>
+      <div className="mt-6">
+        <a
+          href="/collaborate"
+          className="inline-block rounded-md border border-accent bg-accent px-4 py-2.5 text-sm font-semibold text-header transition hover:bg-accent/90"
+        >
+          Become a sponsor
+        </a>
+        <p className="mt-2 text-xs text-muted">
+          Interested partners can also email{" "}
+          <a className="text-link" href="mailto:muhammad.maalik@stonybrook.edu">
+            muhammad.maalik@stonybrook.edu
+          </a>
+          .
+        </p>
       </div>
     </section>
   );

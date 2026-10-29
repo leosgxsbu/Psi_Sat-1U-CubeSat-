@@ -65,18 +65,18 @@ a:hover {
 
 .prose-page h2 {
   font-family: var(--font-display), sans-serif;
-  font-size: 1.75rem;
+  font-size: 2rem;
   font-weight: 700;
-  margin: 2.5rem 0 0.75rem;
+  margin: 3rem 0 1rem;
   color: var(--ink);
 }
 
 .prose-page h2::after {
   content: "";
   display: block;
-  width: 3rem;
-  height: 2px;
-  margin-top: 0.55rem;
+  width: 3.25rem;
+  height: 3px;
+  margin-top: 0.6rem;
   background: var(--accent);
 }
 
