@@ -39,7 +39,7 @@ export function SponsorMarquee({ logos, speed = 30 }: { logos: Logo[]; speed?: n
                 key={`${logo.src}-${i}`}
                 src={logo.src}
                 alt={logo.alt}
-                className="mx-10 h-10 w-auto opacity-90 md:h-12"
+                className="mx-10 h-10 w-auto md:h-12"
                 loading="lazy"
               />
             );

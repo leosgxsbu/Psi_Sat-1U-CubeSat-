@@ -8,6 +8,7 @@ import { Reveal } from "@/components/Reveal";
 import { Hero } from "@/components/Hero";
 import { SponsorMarquee } from "@/components/SponsorMarquee";
 import { HomeStats } from "@/components/HomeStats";
+import { RiseVisual } from "@/components/RiseVisual";
 
 export const metadata: Metadata = {
   title: "Mission Overview",
@@ -28,6 +29,11 @@ export default function HomePage() {
           { src: "/sponsors/ansys.svg", alt: "Ansys", href: "https://www.ansys.com/" },
         ]}
         speed={35}
+      />
+      <RiseVisual
+        imageSrc="/placeholders/cubesat-silhouette.svg"
+        imageAlt="Placeholder silhouette frame for PsiSAT CubeSat render"
+        caption="Placeholder — swap with CubeSat render when available"
       />
 
       <div className="relative z-10 mx-auto max-w-6xl px-4 py-12 md:px-6 md:py-16">
